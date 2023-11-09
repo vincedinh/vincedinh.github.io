@@ -107,7 +107,7 @@ body {
 .sidenav {
   height: 100%;
   width: 0;
-  opacity: 75%;
+  opacity: 90%;
   position: fixed;
   top: 0;
   right: 0;
@@ -210,7 +210,7 @@ body {
 }
 
 .homeSection h1 {
-  font-family: "Timeburner-Bold";
+  font-family:'Timeburner-Bold', Arial, Helvetica, sans-serif;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -316,9 +316,8 @@ body {
   }
 }
 
-
 .aboutSection {
-  font-family: "Timeburner";
+  font-family:'Timeburner', Arial, Helvetica, sans-serif;
   overflow: wrap;
 
   position: relative;
@@ -327,7 +326,7 @@ body {
 }
 
 .aboutSection h1 {
-  font-family: "Timeburner-Bold";
+  font-family:'Timeburner-Bold', Arial, Helvetica, sans-serif;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -376,7 +375,7 @@ body {
 }
 
 .experienceSection h1 {
-  font-family: "Timeburner-Bold";
+  font-family:'Timeburner-Bold', Arial, Helvetica, sans-serif;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -413,7 +412,7 @@ body {
 }
 
 .experienceSection h3 {
-  font-family: "Timeburner-Bold";
+  font-family:'Timeburner-Bold', Arial, Helvetica, sans-serif;
   display: block;
   overflow: hidden;
   white-space: nowrap;
@@ -457,7 +456,7 @@ body {
 }
 
 .projectsSection h1 {
-  font-family: "Timeburner-Bold";
+  font-family:'Timeburner-Bold', Arial, Helvetica, sans-serif;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -465,7 +464,7 @@ body {
 }
 
 .projectsSection h3 {
-  font-family: "Timeburner-Bold";
+  font-family:'Timeburner-Bold', Arial, Helvetica, sans-serif;
   display: block;
   overflow: hidden;
   white-space: wrap;
@@ -562,14 +561,14 @@ body {
 }
 
 .contactSection h1 {
-  font-family: "Timeburner-Bold";
+  font-family:'Timeburner-Bold', Arial, Helvetica, sans-serif;
   display: inline-block;
   overflow: hidden;
   width: auto;
 }
 
 .contactSection h3 {
-  font-family: "Timeburner-Bold";
+  font-family:'Timeburner-Bold', Arial, Helvetica, sans-serif;
   display: block;
   overflow: hidden;
   width: auto;
