@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vince Dinh</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./js/navbar/navbar.js"></script>
+    <script src="./js/sidenav/sidenav.js"></script>
+    <script src="./js/home/home.js"></script>
+  </head>
+  <body>
+    <!-- Side nav for mobile view -->
+    <div id="sideNav" class="sidenav">
+      <a href="javascript:void(0)" id="closeNav">&times;</a>
+      <div class="sidenavMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Nav for desktop view -->
+    <div class="navbar">
+      <a class="home" href="#home">&lt; Vince Dinh /&gt;</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" id="openNav" class="openNav">&#9776;</a>
+    </div>
+
+    <div class="content">
+      <section id="home" class="homeSection">
+        <img id="heroImg" src="./resources/hero/DSC_4427.jpeg" alt="Graduation photo shoot hero image"/>
+        <div class="homeIntro">
+          <h1>Hi, my name's Vince.</h1>
+          <h2>I'm a '23 graduate of UCSC with a Computer Science B.S. and Business Management Economics B.A. 🍌🐌</h2>
+          <h3>I like designing and building responsive web apps. I'm currently looking for career opportunities in software/web development and/or product management.</h3>
+          <div id="socialLinks" class="socialLinks">
+            <li>
+              <a href="https://www.linkedin.com/in/vince-dinh" target="_blank"><img src="./resources/social_links/linkedin.png" alt="LinkedIn link"/></a>
+            </li>
+            <li>
+              <a href="https://www.github.com/vincedinh" target="_blank"><img src="./resources/social_links/github.png" alt="GitHub link"/></a>
+            </li>
+            <li>
+              <a href="mailto:vincekhdinh@gmail.com"><img src="./resources/social_links/mail.png" alt="Email link"/></a>
+            </li>
+          </div>
+        </div>
+      </section>
+
+      <h1 id="homeDivider" class="divider">fad</h1>
+
+      <div class="centerContent">
+        <section id="about" class="aboutSection">
+          <h1>About</h1>
+          <h3>My introduction with web development started back in high school, when I set up a <a href="https://www.shopify.com/" target="_blank" class="highlightText">Shopify</a> site for a short-term  <a href="https://instagram.com/vinhydesigns/" class="highlightText">t-shirt business</a> that I ran by word of mouth around campus and had online for a bit over the height of COVID.</h3>
+          <h3>Going into college, I chose to pursue Computer Science because I always found coding interesting, and later tacked on the Business Management Economics major because I was interested in learning more about e-commerce and marketing.</h3>
+          <h3>I also had the pleasure of joining Spirent Communications as a Software Engineer Intern during my Junior year, working with its Landslide team to address bugs and tickets, and develop a Java based framework to help business users troubleshoot issues with the software.</h3>
+          <h3>By my senior year, I had the opportunity to take a Full Stack Web Development series offered for the first time ever, taught by one of my favorite professors. Since then, I've been eager to learn as much as possible about developing eye-catching and functional responsive web apps!</h3>
+          <h3>When I'm not designing or coding, you can catch me hitting <span class="lastBreath">Last Breaths</span> on <a href="https://www.leagueoflegends.com/en-us/" target="_blank" class="highlightText">Summoner's Rift </a> or skating on my longboard at my favorite beach.</h3>
+          <h3>Oh, currently I also really love listening to NIKI, Tiffany Day, and the EDM genre as a whole.</h3>
+        </section>
+
+        <h1 class="divider">fad</h1>
+
+        <section id="experience" class="experienceSection">
+          <h1>Experience</h1>
+          <div class="jobBlock">
+            <h5 class=>June 2022 - September 2022</h5>
+            <h3>Software Engineer Intern</h3>
+            <h4>Spirent Communications</h4>
+            <div class="scrollableContainer">
+              <p class="techStack">
+                <span>C++</span>
+                <span>Tcl</span>
+                <span>Java</span>
+                <span>Drools RBMS</span>
+              </p>
+            </div>
+            <p>Worked on Landslide product, tackling stories and bug fixes for network emulation software in C++. Notably developed Java framework using Drools RBMS to help end users troubleshoot their issues.</p>
+          </div>
+          <div class="jobBlock">
+            <h5 class=>March 2021 - June 2021</h5>
+            <h3>AI/ML Lab Researcher</h3>
+            <h4>Tech4Good Lab @ UCSC</h4>
+            <div class="scrollableContainer">
+              <p class="techStack">
+                <span>Python3</span>
+                <span>gensim (Doc2Vec)</span>
+                <span>Logistic Regression</span>
+              </p>
+            </div>
+            <p>Developed & trained AI classification model for web development related queries to assist students in narrowing their searches. Trained model on 1000+ Stack Overflow posts. </p>
+          </div>
+          <div class="jobBlock">
+            <h5 class=>July 2020 - June 2020</h5>
+            <h3>Central Processor and Receptionist</h3>
+            <h4>Western Resources Title</h4>
+            <div class="scrollableContainer">
+              <p class="techStack">
+                <span>Data Entry</span>
+                <span>Customer Service</span>
+              </p>
+            </div>
+            <p> Processed data for escrow & title documents for officers and managers in a precise & efficient manner. Facilitated interdepartment communications amongst clients, field agents, escrow branches, and title branches across all SoCal regions.</p>
+          </div>
+          <div class="jobBlock">
+            <h5 class=>June 2018 - July 2018</h5>
+            <h3>AR/VR Development Intern</h3>
+            <h4>EvaraVR</h4>
+            <div class="scrollableContainer">
+              <p class="techStack">
+                <span>C#</span>
+                <span>Unity Engine</span>
+                <span>Photoshop</span>
+                <span>Sony Vegas</span>
+              </p>
+            </div>
+            <p>Designed & built demo application for the Oculus Go using C# and Unity Engine. Helped edit promotional videos of house-touring apps for real estate clients.</p>
+          </div>
+
+          <h3>View my full resume <a href="./resources/resume/resume.pdf" target="_blank">here.</a></h3>
+          <p style="font-style: italic;">Fun fact: I've also worked as a Doordasher, head server, and food runner in the past!</p>
+        </section>
+
+        <h1 class="divider">fad</h1>
+
+        <section id="projects" class="projectsSection">
+          <h1 style=" margin-bottom: 0">Selected Projects</h1>
+          <div class="jobBlock">
+            <h5 class=>October 2023</h5>
+            <h3>Zodify - Full Stack Responsive Web App </h3>
+            <h4><a href="https://zodify-app.com" target="_blank">https://zodify-app.com</a></h4>
+            <div class="scrollableContainer">
+              <p class="techStack">
+                <span>JavaScript ES6/HTML5/CSS</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>React.js</span>
+                <span>Bootstrap</span>
+                <span>PostgreSQL</span>
+                <span>Spotify API</span>
+                <span>Axios-HTTP</span>
+                <span>AWS (ECR, EC2)</span>
+                <span>Docker</span>
+                <span>Nginx</span>
+              </p>
+            </div>
+            <div class="projectImageSet">
+              <img src="./resources/projects/zodify_web.png" class="primaryImg" alt="Zodify web app image"/>
+              <img src="./resources/projects/zodify_mobile.png" class="secondaryImg" alt="Zodify mobile app image"/>
+            </div>            
+            <p>Full Stack Responsive Web App built using Node, Express, React (Bootstrap), and PostgreSQL utilizing the Spotify API to generate a unique Vietnamese Zodiac animal based on user's listen history. Deployed with Docker and AWS (ECR + EC2). Inspired by <a href="https://receiptify.herokuapp.com/">Receiptify</a> and <a href="https://www.youtube.com/c/carmellecodes/videos">Carmelle Codes</a>.</p>
+          </div>
+          <div class="jobBlock">
+            <h5 class=>Winter 2023</h5>
+            <h3>SlugSwap - Full Stack Responsive Web App </h3>
+            <h4><a href="https://www.youtube.com/watch?v=I4QCSITzoSE" target="_blank">Youtube Demo ▶️</a></h4>
+            <div class="scrollableContainer">
+              <p class="techStack">
+                <span>TypeScript/HTML5/CSS</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>React.js</span>
+                <span>Material-UI</span>
+                <span>GraphQL</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+              </p>
+            </div>
+            <div class="projectImageSet">
+              <img src="./resources/projects/slugswap_1.png" class="primaryImg" alt="SlugSwap app catalog image"/>
+              <img src="./resources/projects/slugswap_2.png" class="secondaryImg" alt="SlugSwap app listing creation image"/>
+            </div> 
+            <p>Full Stack Responsive Web App Buy/Sell/Trade App built using Node, Express, React, and PostgreSQL for my capstone class alongside 4 of my peers. Implemented a microservice architecture (auth, listings, accounts, categories, images, messages), and admin/mod app listening on separate ports. Docker containerized. End-to-end test using Supertest and CI/CD applied through GitHub. <span style="font-style: italic">Private code repo can be provided upon request.</span></p>
+          </div>
+          <div class="jobBlock">
+            <h5 class=>Dec 2021</h5>
+            <h3>Glimpse of Future Downtown - 3D Scene </h3>
+            <h4><a href="https://people.ucsc.edu/~vkdinh/GlimpseOfFutureDowntown/scene/scene.html" target="_blank">Link to Scene</a></h4>
+            <div class="scrollableContainer">
+              <p class="techStack">
+                <span>JavaScript/HTML5</span>
+                <span>WebGL</span>
+                <span>Three.js</span>
+              </p>
+            </div>
+            <div class="projectImageSet">
+              <img src="./resources/projects/downtown_web.png" class="primaryImg" alt="Glimpse of Downtown graphics project web image"/>
+              <img src="./resources/projects/downtown_mobile.png" class="secondaryImg" alt="Glimpse of Downtown graphics project mobile image"/>
+            </div> 
+            <p>Interactive computer graphics project using a high-level JavaScript 3D library rendering a view of downtown based on Night City from the game <span style="font-style: italic">Cyberpunk 2077</span>.</p>
+          </div>
+          <p style="font-style: italic">Not to mention this website!</p>
+          <h3>View more on my <a href="https://www.github.com/vincedinh" target="_blank">GitHub</a>. I'm always open to new project ideas!</h3>
+        </section>
+
+        <h1 class="divider">fad</h1>
+
+        <section id="contact" class="contactSection">
+          <h1>Contact</h1>
+          <h3>I'd love to chat! Shoot me an email at <a href="mailto:vincekhdinh@gmail.com">vincekhdinh@gmail.com</a> or <a href="mailto:vince@ucsc.edu">vince@ucsc.edu</a>.</h3>
+          <h3>You can also check out more of me on the platforms below.</h3>
+          <div id="socialLinks" class="socialLinks" style="padding-top: 10px">
+            <li>
+              <a href="https://www.linkedin.com/in/vince-dinh" target="_blank"><img src="./resources/social_links/linkedin.png" alt="LinkedIn link"/></a>
+            </li>
+            <li>
+              <a href="https://www.github.com/vincedinh" target="_blank"><img src="./resources/social_links/github.png" alt="GitHub link"/></a>
+            </li>
+            <li>
+              <a href="mailto:vincekhdinh@gmail.com"><img src="./resources/social_links/mail.png" alt="Email link"/></a>
+            </li>
+          </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Designed & coded by <a href="https://www.linkedin.com/in/vince-dinh" target="_blank">Vince Dinh</a> in <a href="https://code.visualstudio.com/" target="_blank" class="highlightText">VS Code.</a></p>
+      <p>Built using HTML5, CSS, and vanilla TypeScript.</p>
+      <p>Header title text and dividers set in <a href='https://www.fontspace.com/fontania-font-f32287' target="_blank" class="highlightText">Fontania</a> and content text set in <a href="https://www.fontspace.com/timeburner-font-f15111" target="_blank" class="highlightText">Timeburner</a>.</p>
+    </div>
+    <script src="./js/projects/projects.js"></script>
+  </body>
+</html>

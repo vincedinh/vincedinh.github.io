@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "outDir": "./js", // Specify the output directory
+    "target": "ES6",   // Your target TypeScript version
+    // Other compiler options...
+  },
+  "include": ["./ts/**/*.ts"] // Include your source files
+}

@@ -1,0 +1,622 @@
+/* 	
+  off-white: #fffff2
+  off-black: #313639
+  blue: #61dafb;
+*/
+
+@font-face {
+  /* Fontania: https://www.fontspace.com/fontania-font-f32287 */
+  font-family: 'Fontania'; 
+  src: url('./resources/fonts/fontania/Fontania-MjXr.ttf') format('truetype');
+}
+
+@font-face {
+  /* Fontania: https://www.fontspace.com/fontania-font-f32287 */
+  font-family: 'Fontania-Swash'; 
+  src: url('./resources/fonts/fontania/FontaniaSwash-KjPp.ttf') format('truetype');
+}
+
+@font-face {
+  /* Timeburner: https://www.fontspace.com/timeburner-font-f15111 */
+  font-family: 'Timeburner'; 
+  src: url('./resources/fonts/timeburner/Timeburner-xJB8.ttf') format('truetype'),
+}
+
+@font-face {
+  /* Timeburner: https://www.fontspace.com/timeburner-font-f15111 */
+  font-family: 'Timeburner-Bold'; 
+  src: url('./resources/fonts/timeburner/TimeburnerBold-peGR.ttf') format('truetype'),
+}
+
+body {
+  font-family:'Timeburner', sans-serif;
+  background-color: #fffff2;
+
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #313639;
+  position: fixed;
+  overflow: hidden;
+  height: 60px;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar .home {
+  font-family: "Fontania";
+  font-size: xx-large;
+  background-color: #313639;
+  overflow: hidden;
+
+  vertical-align: middle;
+}
+
+.navbar a {
+  color: #fffff2;
+  text-align: center;
+  text-decoration: none;
+
+  float: left;
+  padding: 14px 16px;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+.navbar a:hover {
+  color: #61dafb;
+  transition: 0.3s;
+}
+
+.navbar .openNav {
+  font-family: Arial, Helvetica, sans-serif;
+  display: none; /* Hide the "hamburger" icon by default */
+}
+
+/* Styles for the navbar menu mobile view */
+@media screen and (max-width: 600px) {
+  .navbar {
+    background-color: #313639;
+    overflow: hidden;
+    height: 60px;
+  }
+
+  .navbar a:not(.openNav) {
+    display: none; /* Hide regular links on small screens */
+  }
+
+  .navbar a.home {
+    display: block; /* Show the "home" link on small screens */
+    line-height: 40px;
+  }
+
+  .navbar .openNav {
+    font-size: xx-large;
+    float: right;
+    display: block; /* Show "hamburger" icon on small screens */
+  }
+
+  .navbar.responsive a {
+    display: grid; /* Show links when the "responsive" class is active */
+  }
+}
+
+/* Styles for the side navigation menu mobile view */
+.sidenav {
+  height: 100%;
+  width: 0;
+  opacity: 75%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #313639;
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+.sidenavMenu {
+  margin: 70px 0 0 0;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: #fffff2;
+
+  display: block;
+  padding: 15px;
+  font-size: 1.5em;
+  transition: 0.2s;
+}
+
+#closeNav {
+  color: #fffff2;
+  text-decoration: none;
+
+  display: block;
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+  float: right;
+  font-size: 2em;
+}
+
+.content {
+  padding: 60px 0 0 0;
+}
+
+/* The hero image */
+.hero {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./resources/hero.jpeg");
+
+  /* Set a specific height */
+  height: 100vmin;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.highlightText {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+/* Home section */
+.homeSection {
+  font-family: "Timeburner";
+  overflow: wrap;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.homeSection #heroImg {
+  height: 90vmin;
+  animation: fade-into-view-photo 2s steps(60, end);
+}
+
+@keyframes fade-into-view-photo {
+  from {
+    transform: translateX(-2%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.homeSection .homeIntro {
+  padding-left: 10px;
+}
+
+.socialLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialLinks img {
+  padding: 0 10px 0 0;
+  width: 50px;
+}
+
+.homeSection h1 {
+  font-family: "Timeburner-Bold";
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  animation: typing 4s steps(60, end);
+}
+
+.homeSection h1::after {
+  content: '|'; /* The caret symbol */
+  display: inline-block;
+  vertical-align: text-top;
+  animation: blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.homeSection h2 {
+  margin: 0;
+  padding: 0;
+  animation: fade-into-view 2s steps(60, end);
+}
+
+.homeSection h3 {
+  animation: fade-into-view 2s steps(60, end);
+}
+
+@keyframes fade-into-view {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Styles for the home section mobile view */
+@media screen and (max-width: 600px) {
+  .homeSection .responsive {
+    display: none;
+  }
+
+  .homeSection .homeIntro {
+    padding: 30px 10px 0 0;
+  }
+
+  .socialLinks img {
+    padding: 0 10px 0 0;
+    width: 40px;
+  }
+
+  @keyframes fade-into-view {
+    from {
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.divider {
+  font-family: "Fontania-Swash";
+  color: #61dafb;
+  margin: 50px 0;
+  padding: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+  text-align: center;
+}
+
+.centerContent {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Styles for other sections in mobile view */
+@media screen and (max-width: 600px) {
+  .centerContent {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
+.aboutSection {
+  font-family: "Timeburner";
+  overflow: wrap;
+
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 100px;
+}
+
+.aboutSection h1 {
+  font-family: "Timeburner-Bold";
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+}
+
+.lastBreath {
+  color: transparent;
+  background: linear-gradient(-180deg, #708287, #458799, #00d4ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-decoration: none;
+}
+
+.lastBreath:hover {
+  display: inline-block;
+  background: linear-gradient(180deg, #00d4ff, #708287);
+  background-size: 100% 200%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: soryeGeTon 1s linear infinite;
+}
+
+@keyframes soryeGeTon {
+  0% {
+    background-position: 0% -100%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+.experienceSection {
+  font-family: "Timeburner";
+  overflow: wrap;
+
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 100px;
+}
+
+.experienceSection p {
+  padding: 5px 0;
+  margin: 0 0 0 0;
+}
+
+.experienceSection h1 {
+  font-family: "Timeburner-Bold";
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+}
+
+.jobBlock {
+  margin: 0 0 50px 0;
+}
+
+.scrollableContainer {
+  overflow-x: auto;
+  margin: 0 0 0 0;
+}
+
+.techStack {
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.techStack span {
+  background-color: #61dafb;
+  color: #313639;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px 0;
+  border-radius: 20px;
+}
+
+.experienceSection a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.experienceSection h3 {
+  font-family: "Timeburner-Bold";
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.experienceSection h4 {
+  font-family: "Timeburner";
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.experienceSection h5 {
+  font-family: "Timeburner";
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.projectsSection {
+  font-family: "Timeburner";
+  overflow: wrap;
+
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 100px;
+}
+
+.projectsSection p {
+  padding: 5px 0;
+  margin: 0 0 0 0;
+}
+
+.projectsSection h1 {
+  font-family: "Timeburner-Bold";
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+}
+
+.projectsSection h3 {
+  font-family: "Timeburner-Bold";
+  display: block;
+  overflow: hidden;
+  white-space: wrap;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.projectsSection h4 {
+  font-family: "Timeburner";
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.projectsSection h5 {
+  font-family: "Timeburner";
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.projectsSection .projectImageSet {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.projectsSection .projectImageSet .primaryImg {
+  cursor: pointer;
+  width: 70%;
+  height: 70%;
+  margin-right: 10px;
+}
+
+.projectsSection .projectImageSet .secondaryImg {
+  cursor: pointer;
+  width: 15%;
+  height: 15%;
+}
+
+.primaryImg.expanded, .secondaryImg.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  max-width: 90%; 
+  max-height: 90%;
+  z-index: 6;  
+}
+
+.imgContainer {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+}
+
+.closeImg {
+  cursor: pointer;
+  color: #fffff2;
+  text-decoration: none;
+
+  display: block;
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+  float: right;
+  font-size: 2em;
+  z-index: 7;
+}
+
+.projectsSection a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.contactSection {
+  font-family: "Timeburner";
+  overflow: wrap;
+
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 100px;
+}
+
+.contactSection h1 {
+  font-family: "Timeburner-Bold";
+  display: inline-block;
+  overflow: hidden;
+  width: auto;
+}
+
+.contactSection h3 {
+  font-family: "Timeburner-Bold";
+  display: block;
+  overflow: hidden;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.contactSection h4 {
+  font-family: "Timeburner";
+  display: block;
+  overflow: hidden;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.contactSection h5 {
+  font-family: "Timeburner";
+  display: block;
+  overflow: hidden;
+  width: auto;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.contactSection a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #313639;
+  color: #fffff2;
+
+  text-align: center;
+  padding: 10px 0 10px 0;
+  overflow: hidden;
+  height: auto;
+}
+
+.footer p {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.footer a {
+  color: #61dafb;
+  text-align: center;
+  text-decoration: none;
+}
