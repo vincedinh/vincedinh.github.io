@@ -19,13 +19,13 @@
 @font-face {
   /* Timeburner: https://www.fontspace.com/timeburner-font-f15111 */
   font-family: 'Timeburner'; 
-  src: url('./resources/fonts/timeburner/Timeburner-xJB8.ttf') format('truetype'),
+  src: url('./resources/fonts/timeburner/Timeburner-xJB8.ttf') format('truetype');
 }
 
 @font-face {
   /* Timeburner: https://www.fontspace.com/timeburner-font-f15111 */
   font-family: 'Timeburner-Bold'; 
-  src: url('./resources/fonts/timeburner/TimeburnerBold-peGR.ttf') format('truetype'),
+  src: url('./resources/fonts/timeburner/TimeburnerBold-peGR.ttf') format('truetype');
 }
 
 body {
