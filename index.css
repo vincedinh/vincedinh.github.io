@@ -169,7 +169,7 @@ body {
 
 /* Home section */
 .homeSection {
-  font-family: 'Timeburner';
+  font-family: 'Timeburner', 'Courier New', Courier, monospace;
   overflow: wrap;
   position: relative;
   display: flex;
