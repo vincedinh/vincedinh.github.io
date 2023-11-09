@@ -46,7 +46,7 @@ body {
 }
 
 .navbar .home {
-  font-family: "Fontania";
+  font-family: 'Fontania';
   font-size: xx-large;
   background-color: #313639;
   overflow: hidden;
@@ -72,7 +72,7 @@ body {
 
 .navbar .openNav {
   font-family: Arial, Helvetica, sans-serif;
-  display: none; /* Hide the "hamburger" icon by default */
+  display: none; /* Hide the 'hamburger' icon by default */
 }
 
 /* Styles for the navbar menu mobile view */
@@ -88,18 +88,18 @@ body {
   }
 
   .navbar a.home {
-    display: block; /* Show the "home" link on small screens */
+    display: block; /* Show the 'home' link on small screens */
     line-height: 40px;
   }
 
   .navbar .openNav {
     font-size: xx-large;
     float: right;
-    display: block; /* Show "hamburger" icon on small screens */
+    display: block; /* Show 'hamburger' icon on small screens */
   }
 
   .navbar.responsive a {
-    display: grid; /* Show links when the "responsive" class is active */
+    display: grid; /* Show links when the 'responsive' class is active */
   }
 }
 
@@ -149,8 +149,8 @@ body {
 
 /* The hero image */
 .hero {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./resources/hero.jpeg");
+  /* Use 'linear-gradient' to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./resources/hero.jpeg');
 
   /* Set a specific height */
   height: 100vmin;
@@ -169,7 +169,7 @@ body {
 
 /* Home section */
 .homeSection {
-  font-family: "Timeburner";
+  font-family: 'Timeburner';
   overflow: wrap;
   position: relative;
   display: flex;
@@ -293,7 +293,7 @@ body {
 }
 
 .divider {
-  font-family: "Fontania-Swash";
+  font-family: 'Fontania-Swash';
   color: #61dafb;
   margin: 50px 0;
   padding: 0 0 0 0;
@@ -361,7 +361,7 @@ body {
 }
 
 .experienceSection {
-  font-family: "Timeburner";
+  font-family: 'Timeburner';
   overflow: wrap;
 
   position: relative;
@@ -422,7 +422,7 @@ body {
 }
 
 .experienceSection h4 {
-  font-family: "Timeburner";
+  font-family: 'Timeburner', Helvetica, Arial, sans-serif;
   display: block;
   overflow: hidden;
   white-space: nowrap;
@@ -432,7 +432,7 @@ body {
 }
 
 .experienceSection h5 {
-  font-family: "Timeburner";
+  font-family: 'Timeburner', Helvetica, Arial, sans-serif;
   display: block;
   overflow: hidden;
   white-space: nowrap;
@@ -442,7 +442,7 @@ body {
 }
 
 .projectsSection {
-  font-family: "Timeburner";
+  font-family: 'Timeburner';
   overflow: wrap;
 
   position: relative;
@@ -474,7 +474,7 @@ body {
 }
 
 .projectsSection h4 {
-  font-family: "Timeburner";
+  font-family: 'Timeburner';
   display: block;
   overflow: hidden;
   white-space: nowrap;
@@ -484,7 +484,7 @@ body {
 }
 
 .projectsSection h5 {
-  font-family: "Timeburner";
+  font-family: 'Timeburner';
   display: block;
   overflow: hidden;
   white-space: nowrap;
@@ -552,7 +552,7 @@ body {
 }
 
 .contactSection {
-  font-family: "Timeburner";
+  font-family: 'Timeburner';
   overflow: wrap;
 
   position: relative;
@@ -577,7 +577,7 @@ body {
 }
 
 .contactSection h4 {
-  font-family: "Timeburner";
+  font-family: 'Timeburner';
   display: block;
   overflow: hidden;
   width: auto;
@@ -586,7 +586,7 @@ body {
 }
 
 .contactSection h5 {
-  font-family: "Timeburner";
+  font-family: 'Timeburner', Helvetica, Arial, sans-serif;
   display: block;
   overflow: hidden;
   width: auto;
